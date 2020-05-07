@@ -1,0 +1,16 @@
+{
+    "defaultCommandTimeout": 6000,
+    "pageLoadTimeout": 20000,
+    "baseUrl": "http://localhost:4100",
+    "env": {
+    "qa": {
+      "baseUrl": "https://rahulshettyacademy.com"
+    },
+    "dev": {
+      "baseUrl": "https://google.com"
+    },
+    "env": "qa"
+  },
+  "testFiles": "**/*.{feature,features}",
+  "ignoreTestFiles": "*.js"
+}
