@@ -22,3 +22,22 @@
     7. Add below command to cypress.json
        1. "testFiles": "**/*.{feature,features}",
             "ignoreTestFiles": "*.js"
+    8. Add below code to package.json
+       1.  "cypress-cucumber-preprocessor": {
+            "nonGlobalStepDefinitions": false,
+            "step_definitions": "cypress/integration/featureFiles/stepdefinition/",
+            "commonPath": "cypress/integration/featureFiles/stepdefinition/common/",
+            "cucumberJson": {
+                "generate": true,
+                "outputFolder": "./cypress/results/cucumber-json",
+                "filePrefix": "",
+                "fileSuffix": ".cucumber"
+                }
+    9. Reference link : https://www.npmjs.com/package/cypress-cucumber-preprocessor
+
+## 3. Configure Cucumber html reporting:
+    1. npm install --save-dev cucumber-html-reporter
+    2. Add a index.js file
+    3. Run command 
+       1. node index.js
+    4. Reference link : https://www.npmjs.com/package/cucumber-html-reporter
