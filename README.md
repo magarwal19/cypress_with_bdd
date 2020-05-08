@@ -22,6 +22,7 @@ To get the frontend running locally:
 - Clone this repo
 - `npm install` to install all req'd dependencies
 - `npm start` to start the local server (this project uses create-react-app)
+- `npm run getFeatureFiles --test-run-id=402901` to pull the feature files from HipTest/CucumberStudio (Replace 402901 with run id)
 - `npm run testE2E` to run the cypress test
 - `npm run generateHTMLReport` to generate BDD reports
 

@@ -30,10 +30,11 @@
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "delete:reports": "if exist  \".\\cypress\\results\"; then rmdir .\\cypress\\results /q /s; fi",
+    "delete:reports": "if exist  \".\\cypress\\results\" rmdir .\\cypress\\results /q /s",
     "pretestE2E": "npm run delete:reports",
     "testE2E": "./node_modules/.bin/cypress run --headed",
-    "generateHTMLReport": "node index.js"
+    "generateHTMLReport": "node index.js",
+    "getFeatureFiles": "hiptest-publisher -c hiptest-publisher.conf --only=features"
   },
   "browserslist": {
     "production": [
